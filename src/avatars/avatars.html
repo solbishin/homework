@@ -1,16 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avatars 과제</title>
-  <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
-  <link rel="icon" href="/src/assets/favicon/likelion.svg" />
-  <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css">
-  <link rel="stylesheet" href="./styles/avatars.css" />
-</head>
-<body>
-  <!-- 여기에 마크업을 구성해 주세요. -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatars 과제</title>
+    <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" />
+    <link rel="stylesheet" href="./styles/avatars.css" />
+  </head>
+  <body>
+    <div id="avatars" aria-label="프로필 전체 목록">
+      <div class="avatarsRow">
+        <figure class="avatarItem" aria-labelledby="profile1" aria-describedby="profile1Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face1.jpg" alt="" />
+          <div class="dot offline" aria-hidden="true"></div>
+          <span id="profile1">김철수</span>
+          <span id="profile1Status">오프라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile2" aria-describedby="profile2Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face2.jpg" alt="" />
+          <div class="dot online" aria-hidden="true"></div>
+          <span id="profile2">이철수</span>
+          <span id="profile2Status">온라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile3" aria-describedby="profile3Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face3.jpg" alt="" />
+          <div class="dot offline" aria-hidden="true"></div>
+          <span id="profile3">박철수</span>
+          <span id="profile3Status">오프라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile4" aria-describedby="profile4Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face4.jpg" alt="" />
+          <div class="dot online" aria-hidden="true"></div>
+          <span id="profile4">윤철수</span>
+          <span id="profile4Status">오프라인 상태</span>
+        </figure>
+      </div>
+      <div class="avatarsRow">
+        <figure class="avatarItem" aria-labelledby="profile5" aria-describedby="profile5Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face5.jpg" alt="" />
+          <div class="dot online" aria-hidden="true"></div>
+          <span id="profile5">정철수</span>
+          <span id="profile5Status">오프라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile6" aria-describedby="profile6Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face6.jpg" alt="" />
+          <div class="dot online" aria-hidden="true"></div>
+          <span id="profile5">신철수</span>
+          <span id="profile5Status">온라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile7" aria-describedby="profile7Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face7.jpg" alt="" />
+          <div class="dot offline" aria-hidden="true"></div>
+          <span id="profile7">공철수</span>
+          <span id="profile7Status">오프라인 상태</span>
+        </figure>
+        <figure class="avatarItem" aria-labelledby="profile8" aria-describedby="profile8Status">
+          <img loading="lazy" class="img" src="/src/avatars/images/face8.jpg" alt="" />
+          <div class="dot offline" aria-hidden="true"></div>
+          <span id="profile8">장철수</span>
+          <span id="profile8Status">오프라인 상태</span>
+        </figure>
+      </div>
+    </div>
+  </body>
 </html>

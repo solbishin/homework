@@ -1,1 +1,57 @@
-/* 여기에 스타일을 구현해 주세요 */
+#avatars {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* body를 기준으로 좌표를 잡고 왼쪽 상단 모서리가 중앙에 오게 배치 -> translate로 자신의 크기의 절반을 이동시킴
+-> 화면 중앙에 avatars div의 중앙으로 일치하게 됨 -> 화면 중앙에 위치(브라우저 사이즈가 바뀌어도 유지) */
+
+.avatarsRow {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* margin-bottom으로 row간 간격 조절, 하위에 float 사용했기에 overflow로 자식 인지하게 함 */
+
+.avatarItem {
+  float: left;
+  position: relative;
+  margin: 0 20px 0 0;
+  width: 64px;
+  height: 64px;
+}
+/* avatarItem : 프로필 이미지와 상태 표시 배지로 구성된 컴포넌트.
+float으로 avatarItem 왼쪽에서 오른쪽으로 배치, width로 
+배지 위치를 지정하기 위해 relative를 사용하며 사이즈 고정, 아이템간 간격 설정*/
+
+.img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+/* 이미지 사이즈 고정, 이미지 원형 설정 */
+
+.dot {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
+}
+/* badge: 해당 프로필 유저 offline, oneline 상태 표시, 공통 요소를 해당 단계에서 정의
+사이즈 정의, position:absolute, bottom: 0; right: 0;으로 위치 고정, border-radius: 50%로 배지 원형 설정 */
+
+.offline {
+  border: 1px solid #ffffff;
+  background-color: #dbdbdb;
+}
+/* offline상태에서 달라지는 요소만 정의
+배경색, 테두리 지정 */
+
+.online {
+  border: 1px solid #ffffff;
+  background-color: #4cfe88;
+}
+/* online상태에서 달라지는 요소만 정의
+배경색, 테두리 지정 */
