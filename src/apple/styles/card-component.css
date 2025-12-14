@@ -1,3 +1,110 @@
-@import "./reset.css";
-@import "./theme.css";
-@import "./base.css";
+@import './reset.css';
+@import './theme.css';
+@import './base.css';
+
+.button {
+  padding-block: var(--x-small-spacing);
+  padding-inline: var(--small-spacing);
+  border-radius: 64px;
+  font-size: var(--xx-small-text);
+  box-sizing: border-box;
+  border: none;
+  background: none;
+
+  &.solid-blue {
+    background: var(--blue-200);
+    color: var(--white);
+  }
+
+  &.solid-black {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  &.outline-blue {
+    border: 1px solid var(--blue-200);
+    color: var(--blue-200);
+  }
+  &.outline-black {
+    border: 1px solid var(--black);
+    color: var(--black);
+  }
+
+  @media (min-width: 1024px) {
+    font-size: var(--x-small-text);
+  }
+}
+
+.card {
+  height: var(--size);
+
+  background: var(--black);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding-block-start: var(--large-spacing);
+
+  display: flex;
+  gap: var(--small-spacing);
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  .card-title {
+    font-size: var(--large-text);
+  }
+  .card-body {
+    display: block;
+    font-size: var(--base-text);
+  }
+  .button-wrapper {
+    display: flex;
+    gap: var(--base-spacing);
+  }
+  .upcoming {
+    font-size: var(--small-text);
+  }
+
+  @media (min-width: 1024px) {
+    padding-block-start: var(--extra-large-spacing);
+
+    .card-title {
+      font-size: var(--extra-large-text);
+    }
+    .card-body {
+      display: flex;
+      font-size: var(--medium-text);
+      gap: var(--line-normal);
+    }
+    .button-wrapper {
+      display: flex;
+      gap: var(--base-spacing);
+    }
+    .upcoming {
+      font-size: var(---small-text);
+    }
+  }
+}
+
+.dk {
+  color: var(--white);
+
+  .upcoming {
+    color: var(--gray);
+  }
+}
+
+.lt {
+  color: var(--black--white);
+  background: var(--white);
+  background-image: url();
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  .upcoming {
+    color: var(--gray);
+  }
+}

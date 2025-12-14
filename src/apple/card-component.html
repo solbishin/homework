@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,40 @@
     <link rel="stylesheet" href="./styles/card-component.css" />
   </head>
   <body>
+    <!-- 버튼 컴포넌트 -->
+    <div>버튼</div>
+    <button type="button" class="button solid-blue">더 알아보기</button>
+    <button type="button" class="button solid-black">더 알아보기</button>
+    <button type="button" class="button outline-blue">가격 보기</button>
+    <button type="button" class="button outline-black">가격 보기</button>
+    <hr />
     <!-- 카드 컴포넌트 -->
-
+    <div>카드</div>
+    <div class="card dk">
+      <h2 class="card-title">Title</h2>
+      <div class="card-body-wrapper">
+        <span class="card-body">Body</span>
+        <span class="card-body">Body</span>
+        <span class="card-body">Body</span>
+      </div>
+      <span class="upcoming">출시일 추후 공개</span>
+      <div class="button-wrapper">
+        <button type="button" class="button solid-blue">더 알아보기</button>
+        <button type="button" class="button outline-blue">가격 보기</button>
+      </div>
+    </div>
+    <div class="card lt">
+      <h2 class="card-title">Title</h2>
+      <div class="card-body-wrapper">
+        <span class="card-body">Body</span>
+        <span class="card-body">Body</span>
+        <span class="card-body">Body</span>
+      </div>
+      <span class="upcoming">출시일 추후 공개</span>
+      <div class="button-wrapper">
+        <button type="button" class="button solid-black">더 알아보기</button>
+        <button type="button" class="button outline-black">가격 보기</button>
+      </div>
+    </div>
   </body>
 </html>
